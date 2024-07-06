@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(cool-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.4;
+}
+.weather{
+    z-index: 2;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 10px;
+}
+.weather div {
+    margin: 0.625rem;
+}
+.weather1{
+    font-size: 4rem;
+}
+.weather p {
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 0.75rem;
+}
+.weather3 span{
+    margin: 0.3rem;
+}
+.weather3 img {
+    width: 2rem;
+}
+nav{
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    padding: 1px 0;
+    box-shadow: 0 0 25 rgba(0, 0, 0, 0.18);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgb(73, 70, 70, 0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    
+}
+
+.searching{
+    font-size: 1.1rem;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 98%;
+}
+nav form button{
+    background-color: rgb(140, 161, 180);
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
